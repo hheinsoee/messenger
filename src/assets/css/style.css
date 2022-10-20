@@ -1,0 +1,29 @@
+:root {
+    --msgBox-height: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+.messenger {}
+
+.messageHistory {
+    /* height: calc(100vh - var(--msgBox-height)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: var(--msgBox-height);
+}
+.messageItems{
+    border-radius: 1rem;
+}
+.messageBox {
+    position: fixed;
+    height: var(--msgBox-height);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    padding: 3px 8px;
+}
